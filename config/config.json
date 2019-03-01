@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "password",
-    "database": "Sunflash23#",
+    "database": "kinderpounddb",
     "host": "localhost",
     "dialect": "mysql"
   },
