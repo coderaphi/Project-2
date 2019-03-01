@@ -1,8 +1,10 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+const Handlebars = require('handlebars');
 const path = require('path');
-const Sequelize = require ('sequelize')
+const Sequelize = require ('sequelize');
+var helpers = require('./helpers');
 
 var db = require("./models");
 
@@ -14,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/', express.static('./views'));
 
+helpers(Handlebars);
 // Handlebars
 app.engine(
   "handlebars",
