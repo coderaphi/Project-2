@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/hypnotize.png);
+
+}
+
+img {
+  width: 120%;
+  margin-left: 40px;
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    padding-left: 30px;
+    
+}
+
+.btnRow {
+  padding-left: 5%;
+    padding-right: 5%;
+}
+
+.row.titleTop {
+  margin-top: 18px;
+  font-size: 90px;
+  margin-bottom: unset;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.row.titleBottom {
+  margin-bottom: unset;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 80px;
+}
+
+h4 {
+  font-family: 'Indie Flower', cursive;
+}
+
+.btnRow {
+  font-family: 'Indie Flower', cursive;
+  
+}
+
+.fixed-action-btn, button{
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  
+}
+

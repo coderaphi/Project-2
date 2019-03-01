@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "Sunflash23#",
+    "database": "kinderpounddb",
     "host": "localhost",
     "dialect": "mysql"
   },
