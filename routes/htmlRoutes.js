@@ -66,6 +66,8 @@ module.exports = function(app) {
         photo: "",
         dogScoreDifference: 100
     };
+
+    var arr = [];
     
     for (var i = 0; i < dogsCategoryObject.dogs.length; i++) {
         // console.log(friends[i].name);
@@ -90,10 +92,16 @@ module.exports = function(app) {
                 bestMatch.category = userData.category;
                 bestMatch.photo = dogsCategoryObject.dogs[i].photo;
                 bestMatch.dogScoreDifference = scoreDifference;
+                arr.push(bestMatch);
             }
         }
 
         console.log(bestMatch);
+
+        if (arr.length >= 2) {
+          console.log(arr.slice(arr.length - 2));
+        }
+        
 
         // res.json(bestMatch);
     }
