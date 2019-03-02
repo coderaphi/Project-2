@@ -6,6 +6,7 @@ const path = require('path');
 const Sequelize = require ('sequelize');
 var helpers = require('./helpers');
 
+
 var db = require("./models");
 
 var app = express();
@@ -28,7 +29,7 @@ app.set("view engine", "handlebars");
 
 // Routes
 require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/htmlroutes")(app);
 
 var syncOptions = { force: false };
 
