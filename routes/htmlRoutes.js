@@ -10,21 +10,23 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     
       res.render("index", {
-        msg: "Welcome!",
+        msg: "We are commited to finding homes for our four legged furry friends. Take our survey and find out which breed suits you the best Want to learn more about different breeds? Just click on Dogapedia You can scroll through our Adopt a Pet database to find out about all the good boys and good girls who still haven't found a home Check out our training videos and train your dog the proper way. You might even teach an old dog new tricks Kinder Pound also provides resources such as vetenary care locations, pet grooming locations and dog park information at the click of a button.",
         inventory: {}
       });
     
   });
-
   app.get("/adapt", function(req, res) {
      res.render("adapt", {      
       });
   });
 
   app.get("/dogapedia", function(req, res) {
-    res.render("search_dpedia", {
-        
-        
+    res.render("search_dpedia", {       
+      });  
+  });
+
+  app.get("/resources", function(req, res) {
+    res.render("resources", {       
       });  
   });
 
@@ -62,6 +64,20 @@ module.exports = function(app) {
       });
     });
   });
+
+// ---------------------ADMIN PAGE----------------------------------------
+  app.get('/adminpage', function(req, res) {
+    res.render('adminpage',{
+
+    });
+  });
+
+  // all route loads the all.html page,
+  // where all characters in the db are displayed
+  app.get("/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/all.html"));
+  });
+// ---------------------ADMIN PAGE----------------------------------------
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
