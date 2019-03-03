@@ -9,7 +9,7 @@
 // var toyGroup = ["Maltese Dog", "Chihuahua", "Poodle", "Yorkshire Terrier", "Pomeranian", "Shih Tzu", "King Charles Spaniel", "Papillon Dog", "Giffron Bruxellois", "Toy Poodle"];
 // var nonsportingGroup = ["Bulldog", "Poodle", "French Bulldog", "Boston Terrier", "Bichon Frise", "Dalmatian Dog", "Shar Pei", "Chow Chow", "Shiba Inu", "Lhasa Apso"];
 // var miscellaneousGroup = ["Azawakh", "Barbet", "Belgian Mallinois", "Dogo Argentino", "Dutch Shepherd", "Grand Basset Griffon Vendeen", "Nederlandse Kooikerhondje", "Norrbottenspets", "Peruvian Inca Orchid", "Portugese Podengo"];
-
+errorImage = "https://grindordie.com/wp-content/uploads/2018/06/92C9348B-2C1C-48F8-8D91-EC981100016C-800x600.jpeg";
 var dogGroups = {
     categories : [
         {name: 'Herding', key: 'herdingGroup', id: 1},
@@ -193,7 +193,7 @@ var dogGroups = {
             { 
                 breed: 'Bull Terrier',
                 scores: [4,	2,	3,	3,	2,	1,	3,	1,	3,	2],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12235344/Bull-Terrier-On-White-03.jpg",
+                photo: "https://previews.123rf.com/images/isselee/isselee1011/isselee101100212/8210531-bull-terrier-9-months-old-lying-in-front-of-white-background.jpg",
             },
             { 
                 breed: 'Airedale Terrier',
@@ -255,7 +255,7 @@ var dogGroups = {
             { 
                 breed: 'Great Pyrenees',
                 scores: [5,	2,	2,	3,	1,	2,	3,	2,	4,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12212204/Great-Pyrenees-on-White-05.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12212157/Great-Pyrenees-on-White-01.jpg",
             },
             { 
                 breed: 'Akita',
@@ -306,12 +306,12 @@ var dogGroups = {
             { 
                 breed: 'Maltese Dog',
                 scores: [1,	2,	2,	2,	1,	2,	1,	3,	1,	2],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12231006/Maltese-On-White-04.jpg",
+                photo: "https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/88/22/87490389.jpg",
             },
             { 
                 breed: 'Chihuahua',
                 scores: [1,	2,	1,	3,	1,	2,	1,	3,	2,	3],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213613/Chihuahua-onWhite-13.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234710/Chihuahua-On-White-03.jpg",
             },
             { 
                 breed: 'Poodle',
@@ -341,7 +341,7 @@ var dogGroups = {
             { 
                 breed: 'Papillon Dog',
                 scores: [1,	2,	1,	2,	2,	2,	2,	3,	1,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12230042/Papillon-On-White-01.jpg",
+                photo: "https://previews.123rf.com/images/laures/laures1101/laures110100004/8703071-papillon-dog-on-white-background.jpg",
             },
             { 
                 breed: 'Griffon Bruxelloi',
@@ -362,7 +362,7 @@ var dogGroups = {
             { 
                 breed: 'Bulldog',
                 scores: [4,	3,	2,	3,	2,	1,	3,	3,	3,	3],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/21010129/Bulldog-Slide-02.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/06014426/three-bulldogs.jpg",
             },
             { 
                 breed: 'Poodle',
@@ -445,12 +445,12 @@ var dogGroups = {
             { 
                 breed: 'Grand Basset Griffon Vendeen',
                 scores: [3,	2,	2,	2,	2,	3,	2,	1,	1,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12205729/Grand-Basset-Griffon-Vendeen-on-White-01.jpg",
+                photo: "https://www.petguide.com/wp-content/uploads/2018/01/grand-basset-griffon-vendeen.jpg",
             },
             { 
                 breed: 'Nederlandse Kooikerhondje',
                 scores: [3,	2,	2,	1,	2,	3,	2,	2,	2,	2],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/27080710/Kooiker-profile-800x600.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/25163436/Nederlandse-Kooikerhondje-on-White-03.jpg",
             },
             { 
                 breed: 'Norrbottenspets',
@@ -460,7 +460,7 @@ var dogGroups = {
             { 
                 breed: 'Peruvian Inca Orchid',
                 scores: [3,	1,	1,	1,	2,	2,	3,	3,	2,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/29153948/AdobeStock_102084794.1.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/29133522/Peruvian-Inca-Orchid-04.jpg",
             },
             { 
                 breed: 'Portugese Podengo',
