@@ -1,176 +1,156 @@
-<script>
-</script>
-
-<div class="row left-align no-margin">
-    <div class="s12 m12">
-        <div class="card grey darken-1 no-margin">
-            <div class="card-content white-text">
-                <div class="card-title">
-                    <h2>Survey Questions</h2>
-                </div>
-                <div class="card-action">
-                    <h5>Tell us a bit about yourself!</h5>
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="userName" type="text" class="validate" required>
-                                <label for="userName">Name (Required)</label>
-                            </div>
-
-                        </div>
-                    </form>
-                    <br>
-                </div>
-            </div>
-
-            <!-- Questions for the survey -->
-            <div class="card-content white-text no-bot-pad">
-                <div class="card-action">
-                    <h4>Question 1</h4>
-                    <h5>Which dog category you are interested in <input type="text" name="" id=""></h5>
-                    <select class="browser-default" id="question1" onchange="javascript:location.href = this.value;">
-                        <option value="" disabled {{selected 'select' category}}>Choose your option</option>
-                        {{#each categories}}
-                            <option value="/match/{{key}}" {{selected key ../category}}>{{name}}</option>
-                        {{/each}}
-                    </select>
-
-                    {{#if category}}
-
-                    <h4>Question 2</h4>
-                    <h5>What size of a dog are you interested in? <input type="text" name="" id=""></h5>
-                    <select class="browser-default" id="question2">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1" {{disabled sizes 1}}>Tiny (Upto 11 pounds)</option>
-                        <option value="2" {{disabled sizes 2}}>Small (12 - 22 pounds)</option>
-                        <option value="3" {{disabled sizes 3}}>Medium (22 - 44 pounds)</option>
-                        <option value="4" {{disabled sizes 4}}>Large (45 - 88 pound)</option>
-                        <option value="5" {{disabled sizes 5}}>Extra Large ( over 90 pounds)</option>
-                        <option value="6" {{disabled sizes 6}}>Not Important</option>
-                    </select>
-
-                    <h4>Question 3</h4>
-                    <h5>How energetic do you want your new dog to be?</h5>
-                    <select class="browser-default" id="question3">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Sprinter</option>
-                        <option value="2">Jogger</option>
-                        <option value="3">Couch potato</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 4</h4>
-                    <h5>How much time can you devote to exercise your dog?</h5>
-                    <select class="browser-default" id="question4">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">30 - 45 minutes</option>
-                        <option value="2">20 - 30 minutes</option>
-                        <option value="3">Little or none</option>
-                        <option value="4">Not Important</option>
-                    </select>
-
-                    <h4>Question 5</h4>
-                    <h5>How often will you be able to play with your dog?</h5>
-                    <select class="browser-default" id="question5">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">All day</option>
-                        <option value="2">Few times a day</option>
-                        <option value="3">Maybe once a day</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 6</h4>
-                    <h5>How affectionate would you like your dog to be?</h5>
-                    <select class="browser-default" id="question6">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Never leaves my side</option>
-                        <option value="2">Gives me some love when I get home, but keeps to himself most of the
-                            time</option>
-                        <option value="3">I'm looking for more of a roommate than a companion</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 7</h4>
-                    <h5>Do you have other pets?</h5>
-                    <select class="browser-default" id="question7">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Yes. So, it's important that my new dog can live among other animals
-                        </option>
-                        <option value="2">No. But, I plan on having my dog interact with other animals, so he
-                            needs to be friendly</option>
-                        <option value="3">No. I'm looking for a dog who can hunt, so friendliness towards other
-                            animals isn't a top priority</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 8</h4>
-                    <h5>How trainable would you like your dog to be?</h5>
-                    <select class="browser-default" id="question8">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Very trainable. I plan to teach him all the basic commands, plus a lot
-                            of fun tricks</option>
-                        <option value="2">Fairly trainable. He needs to know all the basic commands</option>
-                        <option value="3">Not very trainable. I have a laid-back approach to rules and command
-                        </option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 9</h4>
-                    <h5>How protective do you want your new dog to be?</h5>
-                    <select class="browser-default" id="question9">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Extremely protective. I'm looking for a round-the-clock watchdog
-                        </option>
-                        <option value="2">Somewhat protective. I'm looking for a protector, but not a guard dog
-                        </option>
-                        <option value="3">Little to no protection needed here</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 10</h4>
-                    <h5>How much maintenance and grooming are you able to provide for your dog?</h5>
-                    <select class="browser-default" id="question10">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">I am able to groom my dog 5 - 7 times a week as well as frequent the
-                            groomer</option>
-                        <option value="2">I am able to groom my dog 3 - 5 times a week with the occasional visit
-                            to a groomer</option>
-                        <option value="3">I want a dog that's as low maintenance as possible</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    <h4>Question 11</h4>
-                    <h5>What kind of temperature tolerance does your new dog need to have?</h5>
-                    <select class="browser-default" id="question11">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">I live in a warm climate, so he needs to tolerate hot weather</option>
-                        <option value="2">I live in a cold climate, so he needs to tolerate cold weather</option>
-                        <option value="3">I live where it's warm during summer and cold during winter,
-                            so he needs to tolerate both warm and cold weather</option>
-                        <option value="4">Not important</option>
-                    </select>
-
-                    {{/if}}
-
-                    <br>
-                    <div class="row center-align">
-                        <button class="btn " type="submit" name="action" id="submit">Submit Your
-                            Responses
-                            <i class="material-icons right">send</i>
-                            <button class="btn waves-effect waves-light grey" type="submit" name="action">Submit
-                                <i class="mdi-content-send right"></i>
-                            </button>
-                        </button>
+<div class="container">
+    
+    <div>
+        <div class="s12 m12">
+            <div class="card transparent darken-1 no-margin">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h2>Survey Questions</h2>
                     </div>
-                    <footer class="page-footer grey darken-1">
-                        <div class="left-align">
-                            <a class="grey-text text-lighten-4 no-right-mar" href="/api/dogs">API Dogs List</a>
-                    </footer>
+                </div>
+
+                <!-- Questions for the survey -->
+                <div class="card-content no-bot-pad">
+                    <div class="card-action" id="category_id">
+                        {{!-- <h4>Question 1</h4> --}}
+                        <h5>Which dog category you are interested in <input type="text" name="" id=""></h5>
+                        <select class="browser-default" id="question1" onchange="javascript:location.href = this.value;">
+                            <option value="" disabled {{selected 'select' category}}>Choose your option</option>
+                            {{#each categories}}
+                                <option value="/match/{{key}}#category_id" {{selected key ../category}}>{{name}}</option>
+                            {{/each}}
+                        </select>
+
+                        {{#if category}}
+
+                        {{!-- <h4>Question 2</h4> --}}
+                        <h5>What size of a dog are you interested in? <input type="text" name="" id=""></h5>
+                        <select class="browser-default" id="question2">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1" {{disabled sizes 1}}>Tiny (Upto 11 pounds)</option>
+                            <option value="2" {{disabled sizes 2}}>Small (12 - 22 pounds)</option>
+                            <option value="3" {{disabled sizes 3}}>Medium (22 - 44 pounds)</option>
+                            <option value="4" {{disabled sizes 4}}>Large (45 - 88 pound)</option>
+                            <option value="5" {{disabled sizes 5}}>Extra Large ( over 90 pounds)</option>
+                            <option value="6" {{disabled sizes 6}}>Not Important</option>
+                        </select>
+
+                        {{!-- <h4>Question 3</h4> --}}
+                        <h5>How energetic do you want your new dog to be?</h5>
+                        <select class="browser-default" id="question3">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Sprinter</option>
+                            <option value="2">Jogger</option>
+                            <option value="3">Couch potato</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 4</h4> --}}
+                        <h5>How much time can you devote to exercise your dog?</h5>
+                        <select class="browser-default" id="question4">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">30 - 45 minutes</option>
+                            <option value="2">20 - 30 minutes</option>
+                            <option value="3">Little or none</option>
+                            <option value="4">Not Important</option>
+                        </select>
+
+                        {{!-- <h4>Question 5</h4> --}}
+                        <h5>How often will you be able to play with your dog?</h5>
+                        <select class="browser-default" id="question5">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">All day</option>
+                            <option value="2">Few times a day</option>
+                            <option value="3">Maybe once a day</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 6</h4> --}}
+                        <h5>How affectionate would you like your dog to be?</h5>
+                        <select class="browser-default" id="question6">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Never leaves my side</option>
+                            <option value="2">Gives me some love when I get home, but keeps to himself most of the
+                                time</option>
+                            <option value="3">I'm looking for more of a roommate than a companion</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 7</h4> --}}
+                        <h5>Do you have other pets?</h5>
+                        <select class="browser-default" id="question7">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Yes. So, it's important that my new dog can live among other animals
+                            </option>
+                            <option value="2">No. But, I plan on having my dog interact with other animals, so he
+                                needs to be friendly</option>
+                            <option value="3">No. I'm looking for a dog who can hunt, so friendliness towards other
+                                animals isn't a top priority</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 8</h4> --}}
+                        <h5>How trainable would you like your dog to be?</h5>
+                        <select class="browser-default" id="question8">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Very trainable. I plan to teach him all the basic commands, plus a lot
+                                of fun tricks</option>
+                            <option value="2">Fairly trainable. He needs to know all the basic commands</option>
+                            <option value="3">Not very trainable. I have a laid-back approach to rules and command
+                            </option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 9</h4> --}}
+                        <h5>How protective do you want your new dog to be?</h5>
+                        <select class="browser-default" id="question9">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Extremely protective. I'm looking for a round-the-clock watchdog
+                            </option>
+                            <option value="2">Somewhat protective. I'm looking for a protector, but not a guard dog
+                            </option>
+                            <option value="3">Little to no protection needed here</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 10</h4> --}}
+                        <h5>How much maintenance and grooming are you able to provide for your dog?</h5>
+                        <select class="browser-default" id="question10">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">I am able to groom my dog 5 - 7 times a week as well as frequent the
+                                groomer</option>
+                            <option value="2">I am able to groom my dog 3 - 5 times a week with the occasional visit
+                                to a groomer</option>
+                            <option value="3">I want a dog that's as low maintenance as possible</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{!-- <h4>Question 11</h4> --}}
+                        <h5>What kind of temperature tolerance does your new dog need to have?</h5>
+                        <select class="browser-default" id="question11">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">I live in a warm climate, so he needs to tolerate hot weather</option>
+                            <option value="2">I live in a cold climate, so he needs to tolerate cold weather</option>
+                            <option value="3">I live where it's warm during summer and cold during winter,
+                                so he needs to tolerate both warm and cold weather</option>
+                            <option value="4">Not important</option>
+                        </select>
+
+                        {{/if}}
+
+                        <br>
+                        <div class="row center-align">
+                            <button class="btn " type="submit" name="action" id="submit">Submit Your
+                                Responses
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
 

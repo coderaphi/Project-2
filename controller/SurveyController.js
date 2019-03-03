@@ -2,11 +2,6 @@ var dogs = require('../data/dogs');
 
 module.exports = function(userData) {
     var dogsCategoryObject = dogs[userData.category];
-    console.log(userData);
-
-    // scoreDifference will hold the difference in scores between user and 
-    // friends  in the data base. 
-    var scoreDifference = 0;
 
     var userScores = userData['scores[]'];
 
@@ -17,37 +12,41 @@ module.exports = function(userData) {
         photo: "",
         dogScoreDifference: 100
     };
+
+    var dogMatchArr = [];
     
     for (var i = 0; i < dogsCategoryObject.dogs.length; i++) {
-        // console.log(friends[i].name);
-        scoreDifference = 0;
+        var scoreDifference = 0;
 
         //loop through that friends score and the users score and calculate the absolute 
         //difference between the two and push that to the total difference variable set above
         var dogScore = 0;
 
+        //  loops over scores
         for (var j = 0; j < 10; j++) {
             // We calculate the difference between the scores and sum them into the scoreDifference
             dogScore = dogsCategoryObject.dogs[i].scores[j];
-
-            console.log("dogScore", dogScore);
-            scoreDifference = Math.abs(parseInt(userScores[j]) - parseInt(dogScore));
-            // create an  object to store information of the best match.
-            
-            // If the sum of differences is less then the differences of the current "best match"
-            if (scoreDifference <= bestMatch.dogScoreDifference) {
-                // Reset the bestMatch to be the new friend. 
-                bestMatch.name = dogsCategoryObject.dogs[i].breed;
-                bestMatch.category = userData.category;
-                bestMatch.photo = dogsCategoryObject.dogs[i].photo;
-                bestMatch.dogScoreDifference = scoreDifference;
-            }
+            scoreDifference = scoreDifference + Math.abs(parseInt(userScores[j]) - parseInt(dogScore));
         }
 
-        console.log(bestMatch);
+        dogMatchArr.push({
+            name: dogsCategoryObject.dogs[i].breed,
+            category: userData.category,
+            photo: dogsCategoryObject.dogs[i].photo,
+            dogScoreDifference: scoreDifference
+        });
 
-        // res.json(bestMatch);
     }
 
-    return bestMatch;
+    var sortedByScores = dogMatchArr.sort(function(a, b) {
+        return a.dogScoreDifference - b.dogScoreDifference
+    });
+    
+    for(var i = 1; i < userScores.length; i++) {
+        if(parseInt(userScores[i]) !== 4) {
+            return sortedByScores.slice(0, 3);
+        }
+    }
+
+    return sortedByScores;
 }

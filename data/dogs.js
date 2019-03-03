@@ -41,7 +41,7 @@ var dogGroups = {
             { 
                 breed: 'Australian Shepherd',
                 scores: [4,	2,	2,	3,	3,	2,	2,	3,	2,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/03173132/Australian-Shepherd.1.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13001309/Australian-Shepherd-On-White-07.jpg",
             },
             { 
                 breed: 'Sheltie',
@@ -51,7 +51,7 @@ var dogGroups = {
             { 
                 breed: 'Old English Sheep Dog',
                 scores: [4,	2,	1,	2,	1,	1,	2,	1,	2,	1],
-                photo: "http://cdn.akc.org/content/article-body-image/oes_hero.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12230147/Old-English-Sheepdog-On-White-03.jpg",
             },
             { 
                 breed: 'Prembroke Welsh Corgi',
@@ -61,7 +61,7 @@ var dogGroups = {
             { 
                 breed: 'Stumpy tail Cattle Dog',
                 scores: [3,	3,	2,	2,	2,	2,	1,	2,	3,	2],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/07/10105842/Australian-Stumpy-Tail-Cattle-Dog-Slideshow-04.jpg",
+                photo: "https://www.advancepet.com.au/images/breeds/aust_stumpy_tail_cattle_dog.jpg",
             },
             { 
                 breed: 'Belgian Malinois',
@@ -87,12 +87,12 @@ var dogGroups = {
             { 
                 breed: 'Pointer',
                 scores: [4,	1,	2,	1,	2,	2,	2,	3,	3,	3],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12212246/Pointer-slide1.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225723/Pointer-On-White-02.jpg",
             },
             { 
                 breed: 'English Springer Spaniel',
                 scores: [4,	1,	3,	1,	3,	3,	2,	2,	2,	2],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12214224/ECSCAHuntTest_201010_EnglishSpringerSpaniel_IMG_1070_detail.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12233538/English-Springer-Spaniel-On-White-03.jpg",
             },
             { 
                 breed: 'German Shorthaired Pointer',
@@ -112,7 +112,7 @@ var dogGroups = {
             { 
                 breed: 'English Cocker Spaniel',
                 scores: [3,	2,	2,	2,	2,	1,	1,	3,	1,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/16105011/English-Cocker-Spaniel-Slide03.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12233729/English-Cocker-Spaniel-On-White-03.jpg",
             },
             { 
                 breed: 'Vizsla',
@@ -173,17 +173,17 @@ var dogGroups = {
             { 
                 breed: 'Irish Wolfhound',
                 scores: [5,	2,	1,	1,	2,	3,	3,	2,	3,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12211902/Irish-Wolfhound-on-White-12.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12211909/Irish-Wolfhound-on-White-14.jpg",
             },
             { 
                 breed: 'Afghan Hound',
                 scores: [4,	1,	2,	2,	1,	1,	3,	1,	1,	2],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/19145725/Afghan-Hound1.jpg",
+                photo: "https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23004_afghan-hound.jpg",
             },
             { 
                 breed: 'Borzoi',
                 scores: [5,	1,	3,	3,	1,	2,	3,	2,	3,	3],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12212631/Borzoi-on-White-01.jpg",
+                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/01132030/Borzoi-On-White-031.jpg",
             }
         ],
         sizes: {2 : true, 3 : true, 4 : true, 5: true},    
@@ -223,7 +223,7 @@ var dogGroups = {
             { 
                 breed: 'West Highland White Terrier',
                 scores: [2,	2,	2,	2,	3,	3,	3,	1,	2,	1],
-                photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213209/West-Highland-White-Terrier-on-White-01.jpg",
+                photo: "https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23092_west-highland-white-terrier-460x290.jpg",
             },
             { 
                 breed: 'Irish Terrier',

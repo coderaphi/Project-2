@@ -1,6 +1,7 @@
 var db = require("../models");
 var dogs = require('../data/dogs');
 var surveyController = require('../controller/SurveyController');
+var tainingVideoController = require('../controller/TrainingVideoController');
 
 module.exports = function(app) {
   // Load index page
@@ -62,10 +63,17 @@ module.exports = function(app) {
     // res.json(bestMatch);
 
     res.render('best_match', {
-      breed: bestMatch.name,
-      photo: bestMatch.photo
+      dogs: bestMatch
     });
 
+  });
+
+  app.get('/training', function(req,res) {
+    tainingVideoController().then(function(data) {
+      res.render('training', {
+        videos: data.items
+      });
+    });
   });
 
   // Render 404 page for any unmatched routes
