@@ -1,7 +1,7 @@
 <div class="container" style="margin-top:10px;">
-  <div class="row">
+  <div class="row" style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto;grid-column-gap:10px;grid-row-gap:10px;">
     {{#each videos}}
-    <div class="col s12 m4">
+    <div>
       <div class="card">
         <div class="card-image" style="display: flex; justify-content: center; padding: 10px;">
           <img src="{{snippet.thumbnails.medium.url}}" style="width:336.14px;height:224.09px;">
@@ -11,7 +11,7 @@
           <p></p>
         </div>
         <div class="card-action" style="text-align:center;">
-          <a href="#modal1" class="modal-trigger" onclick="javascript: changeVideo('{{id.videoId}}', '{{trim snippet.title 65}}')">{{trim snippet.title 65}}</a>
+          <a href="#modal1" class="modal-trigger" onclick="javascript: changeVideo('{{id.videoId}}', '{{trim snippet.title 65}}')">{{trim snippet.title 32}}</a>
         </div>
       </div>
     </div>

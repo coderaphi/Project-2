@@ -11,7 +11,7 @@ module.exports = function(app) {
     
       res.render("index", {
         msg: "Welcome!",
-        inventory: dbinventory
+        inventory: {}
       });
     
   });

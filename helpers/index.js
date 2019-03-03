@@ -9,7 +9,7 @@ function hbsHelpers(hbs) {
 
     hbs.registerHelper("trim", function(value, length) {
         if (value.length > length) {
-            return value.slice(0, 65) + '...';
+            return value.slice(0, length) + '...';
         }
         return value;
     });
