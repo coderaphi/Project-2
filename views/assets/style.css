@@ -73,25 +73,42 @@ h4 {
 
 
 #banner-message {
-  background: #fff;
+  background-image: url(img/hypnotize.png);
   border-radius: 4px;
-  padding: 20px;
+  padding: 1px;
   font-size: 25px;
   text-align: center;
   transition: all 0.2s;
   margin: 0 auto;
   width: 500px;
+  float: left;
+  margin-top: 10%;
 }
 
 #breed_data {
-  background: #fff;
+  background-image: url(img/hypnotize.png);
   border-radius: 4px;
-  padding: 20px;
+  padding: 1px;
   font-size: 12px;
   text-align: left;
   transition: all 0.2s;
   margin: 0 auto;
-  width: 500px;
+  width: 450px;
+  /* margin-top: 10%; */
+  float: left;
+  
+}
+#breed_data2{
+  background-image: url(img/hypnotize.png);
+  float: right;
+  border-radius: 4px;
+  padding: 1px;
+  font-size: 18px;
+  text-align: left;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 450px;
+  
 }
 
 #breed_image {
@@ -100,6 +117,19 @@ h4 {
   width: 460px;
 }
 
+#breed_table_data {
+
+  background: #fff;
+  border-radius: 4px;
+  padding: 1px;
+  font-size: 12px;
+  text-align: left;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 450px;
+  margin-top: 10%;
+
+}
 
 /* Dogapedia--------------------------------------------------- */
 
