@@ -96,8 +96,7 @@ h4 {
   font-size: 25px;
   text-align: center;
   transition: all 0.2s;
-  /* margin-left: 600px;
-  width: 500px; */
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -107,7 +106,6 @@ h4 {
   border-radius: 4px;
   padding: 20px;
   font-size: 12px;
-  text-align: left;
   transition: all 0.2s;
   /* margin-left: 640px; */
   /* width: 500px; */
@@ -116,12 +114,9 @@ h4 {
 #breed_image {
   /* background: rgb(255, 255, 255); */
   width: 460px;
+  
 }
-/* #banner-message{
-  margin-left: 635px;
-  margin-top: 80px;
-  width: 1000px;
-} */
+
 
 #breed_data2{
 
@@ -132,7 +127,6 @@ h4 {
 
 
 
-/* Dogapedia--------------------------------------------------- */
 
 .nav {
   display: flex;
@@ -158,3 +152,10 @@ h4 {
 .card-action{
   list-style-type: none;
 }
+.card .card-content {
+  margin-top:50px;
+}
+.surveryQ{
+  text-align:center;
+}
+/* Dogapedia--------------------------------------------------- */
