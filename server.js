@@ -10,7 +10,7 @@ var helpers = require('./helpers');
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3030;
+var PORT = process.env.PORT || 3070;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));

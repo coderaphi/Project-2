@@ -93,7 +93,7 @@ h4 {
   background: #fff;
   border-radius: 4px;
   padding: 20px;
-  font-size: 25px;
+  font-size: 15px;
   text-align: center;
   transition: all 0.2s;
   margin-top: 50px;
@@ -161,5 +161,13 @@ h4 {
 .modaldesc{
   font-size: 35px;
   text-align:center;
+}
+
+table {
+  width: 50%; 
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: 270px;
 }
 /* Dogapedia--------------------------------------------------- */
