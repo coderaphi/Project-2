@@ -15,10 +15,7 @@ module.exports = function(app) {
       });
     
   });
-  app.get("/adapt", function(req, res) {
-     res.render("adapt", {      
-      });
-  });
+
 
   app.get("/dogapedia", function(req, res) {
     res.render("search_dpedia", {       
@@ -74,9 +71,18 @@ module.exports = function(app) {
 
   // all route loads the all.html page,
   // where all characters in the db are displayed
+
+  app.get("/adopt", function(req, res) {
+    db.inventory.findAll({}).then(function(body) {
+      res.render('adopt', {
+        dogs: body
+      });
+    });
+  });
+
   app.get("/all", function(req, res) {
     db.inventory.findAll({}).then(function(body) {
-      res.render('adapt', {
+      res.render('adopt', {
         dogs: body
       });
     });
@@ -88,7 +94,7 @@ module.exports = function(app) {
         Adapted: 'Yes'
       }
     }).then(function(body) {
-      res.render('adapt', {
+      res.render('adopt', {
         dogs: body
       });
     });
@@ -100,7 +106,7 @@ module.exports = function(app) {
         gender: req.params.type
       }
     }).then(function(body) {
-      res.render('adapt', {
+      res.render('adopt', {
         dogs: body
       });
     });

@@ -34,9 +34,7 @@ app.post("/api/new", function(req, res) {
   // Take the request...
   var character = req.body;
 
-  // Create a routeName
-
-  // Using a RegEx Pattern to remove spaces from character.name
+   // Using a RegEx Pattern to remove spaces from character.name
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   var routeName = character.name.replace(/\s+/g, "").toLowerCase();
 
