@@ -1,4 +1,4 @@
-var db = require("../models");
+var db = require("../models/");
 var bodyparser = require ('body-parser');
 var mysql = require ('mysql');
 var express = require ('express');
@@ -9,14 +9,13 @@ app.use(bodyparser.json());
 module.exports = function(app) {
   // Get all examples
   app.get("/inventory", function(req, res) {
-    db.body.findAll({}).then(function(body) {
+    db.inventory.findAll({}).then(function(body) {
       res.json(body);
-      console.log(body)
     });
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
+  app.post("/inventory", function(req, res) {
     db.inventory.create(req.body).then(function(dbinventory) {
       res.json(dbinventory);
     });

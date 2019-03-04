@@ -75,8 +75,37 @@ module.exports = function(app) {
   // all route loads the all.html page,
   // where all characters in the db are displayed
   app.get("/all", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/all.html"));
+    db.inventory.findAll({}).then(function(body) {
+      res.render('adapt', {
+        dogs: body
+      });
+    });
   });
+
+  app.get("/adopted", function(req, res) {
+    db.inventory.findAll({
+      where: {
+        Adapted: 'Yes'
+      }
+    }).then(function(body) {
+      res.render('adapt', {
+        dogs: body
+      });
+    });
+  });
+
+  app.get("/gender/:type", function(req, res) {
+    db.inventory.findAll({
+      where: {
+        gender: req.params.type
+      }
+    }).then(function(body) {
+      res.render('adapt', {
+        dogs: body
+      });
+    });
+  });
+
 // ---------------------ADMIN PAGE----------------------------------------
 
   // Render 404 page for any unmatched routes

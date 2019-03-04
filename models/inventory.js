@@ -1,13 +1,15 @@
-module.exports = function (sequelize, DataTypes) {
+const Sequelize = require ('sequelize');
+
+module.exports = function (sequelize) {
   var inventory = sequelize.define("inventory", {
-    dog_name: DataTypes.STRING,
-    gender: DataTypes.TEXT,
-    Breed: DataTypes.TEXT,
-    age: DataTypes.INTEGER,
-    Vaccinated: DataTypes.TEXT,
-    Adapted: DataTypes.TEXT,
-    size: DataTypes.TEXT,
-    photo: DataTypes.TEXT,
+    dog_name: Sequelize.STRING,
+    gender: Sequelize.TEXT,
+    Breed: Sequelize.TEXT,
+    age: Sequelize.INTEGER,
+    Vaccinated: Sequelize.TEXT,
+    Adapted: Sequelize.TEXT,
+    size: Sequelize.TEXT,
+    photo: Sequelize.TEXT,
   });
   inventory.sync({ force: true }).then(() => {
 
