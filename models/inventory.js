@@ -27,7 +27,7 @@ module.exports = function (sequelize) {
       {
         dog_name: 'Toya',
         gender: 'Female',
-        Breed: Mastiff Mix'
+        Breed: 'Mastiff Mix',
         age:2,
         Vaccinated: 'yes',
         Adapted: 'No',
