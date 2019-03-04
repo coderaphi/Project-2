@@ -20,39 +20,39 @@ module.exports = function (sequelize) {
         Breed: 'Mutt',
         age: 1,
         Vaccinated: 'yes',
-        Adapted: 'No',
-        size: 'small',
-        photo: 'https://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-30.jpg'
+        Adopted: 'No',
+        size: 'medium',
+        photo: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43503801/1/?bust=1551650322&width=720'
       },
       {
         dog_name: 'Toya',
         gender: 'Female',
-        Breed: 'German Shepherd',
-        age: 1,
+        Breed: Mastiff Mix'
+        age:2,
         Vaccinated: 'yes',
         Adapted: 'No',
-        size: 'small',
-        photo: 'https://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-30.jpg'
+        size: 'large',
+        photo: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43815259/2/?bust=1547929282&width=720'
       },
-      {
+       {
         dog_name: 'Dash',
         gender: 'Male',
-        Breed: 'Doberman',
+        Breed: 'Boxer & Lab mix',
         age: 3,
         Vaccinated: 'yes',
         Adapted: 'No',
         size: 'large',
-        photo: 'https://www.dogster.com/wp-content/uploads/2014/06/A-Doberman-puppy.jpg'
+        photo: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43815267/3/?bust=1547929478&width=720'
       },
       {
-        dog_name: 'Dash',
+        dog_name: 'Bernie',
         gender: 'Female',
-        Breed: 'German Shepherd',
+        Breed: 'Beagle',
         age: 3,
         Vaccinated: 'yes',
         Adapted: 'No',
         size: 'small',
-        photo: 'https://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-30.jpg'
+        photo: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/40713048/2/?bust=1516373039&width=720'
       },
       {
         dog_name: 'Arrow',
@@ -131,7 +131,7 @@ module.exports = function (sequelize) {
         dog_name: 'Maxxi',
         gender: 'Female',
         Breed: 'Mutt',
-        age: '3 months',
+        age: 3,
         Vaccinated: 'No',
         Adopted: 'No',
         size: 'small',
@@ -197,7 +197,7 @@ module.exports = function (sequelize) {
         dog_name: 'Damon',
         gender: 'Male',
         Breed: 'German shepherd mix',
-        age: '9 months',
+        age: 1,
         Vaccinated: 'Yes',
         Adopted: 'No',
         size: 'Medium',
@@ -208,7 +208,7 @@ module.exports = function (sequelize) {
         dog_name: 'Precious',
         gender: 'Female',
         Breed: 'Mutt',
-        age: '8 months',
+        age: 1,
         Vaccinated: 'Yes',
         Adopted: 'No',
         size: 'Small',
@@ -254,7 +254,7 @@ module.exports = function (sequelize) {
         dog_name: 'Droopy',
         gender: 'Male',
         Breed: 'Blood hound',
-        age: '7 months',
+        age: 1,
         Vaccinated: 'Yes',
         Adopted: 'No',
         size: 'Medium',
@@ -417,7 +417,6 @@ module.exports = function (sequelize) {
         photo: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43750237/3/?bust=1549504550&width=720'
 
       },
-
 
 
     ];
