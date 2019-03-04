@@ -107,9 +107,10 @@ module.exports = function(app) {
 
   app.get("/vaccinated", function(req, res) {
     db.inventory.findAll({
-      where: {
-        Vaccinated: 'Yes'
-      }
+      where: db.sequelize.where(
+        db.sequelize.fn('lower', db.sequelize.col('Vaccinated')), 
+        db.sequelize.fn('lower', 'yes')
+      )
     }).then(function(body) {
       res.render('adopt', {
         dogs: body
@@ -119,9 +120,10 @@ module.exports = function(app) {
 
   app.get("/gender/:type", function(req, res) {
     db.inventory.findAll({
-      where: {
-        gender: req.params.type
-      }
+      where: db.sequelize.where(
+        db.sequelize.fn('lower', db.sequelize.col('gender')), 
+        db.sequelize.fn('lower', req.params.type)
+      )
     }).then(function(body) {
       res.render('adopt', {
         dogs: body
