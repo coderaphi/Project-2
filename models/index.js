@@ -6,7 +6,7 @@ var Sequelize = require("sequelize");
 var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
-var inventory = require('./inventory');
+var dog_fixture = require('../data/dog_fixture');
 var db = {};
 
 if (config.use_env_variable) {
@@ -38,8 +38,23 @@ Object.keys(db).forEach(function(modelName) {
   }
 });
 
+var inventory = sequelize.define("inventory", {
+  dog_name: Sequelize.STRING,
+  gender: Sequelize.TEXT,
+  Breed: Sequelize.TEXT,
+  age: Sequelize.INTEGER,
+  Vaccinated: Sequelize.TEXT,
+  Adapted: Sequelize.TEXT,
+  size: Sequelize.TEXT,
+  photo: Sequelize.TEXT,
+});
+
+inventory.sync({ force: true }).then(() => {
+  return dog_fixture.map(a => inventory.create(a));
+});
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
-db.inventory = inventory(sequelize);
+db.inventory = inventory;
 
 module.exports = db;
