@@ -1,35 +1,33 @@
 <div class="container">
     <div class="jumbotron">
-        <h1>Admin Page - add Dogs</h1>
+        <h1 style="font-size: 20px ">Admin Page - add Dogs</h1>
         <hr>
-        <a href="/" class="btn btn-danger btn-lg">
-            <span class="fa fa-eye"></span> Search Pets</a>
-            
-        <a href="/all" class="btn btn-danger btn-lg">
-            <span class="fa fa-th-list"></span> Show all pets</a>
+
     </div>
     <div class="row">
 
         <div class="col-lg-12">
 
-            <div class="card">
-                <div class="card-header">
-                    Admin Page - add Dogs
-                </div>
+            <div class="card" style="padding: 10px;">
+                
                 <div class="card-body">
                     <form action="" method="POST" role="form">
 
                         <div class="form-group">
                             <label for="">Name</label>
                             <input type="text" class="form-control" id="name" placeholder="">
+                            
                         </div>
 
-                        <div class="form-group">
+                        <div class="browser-default">
                             <label for="">Gender</label>
-                            <input type="text" class="form-control" id="gender" placeholder="">
+                            <select class="browser-default" id="gender">     
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
                         </div>
 
-                        <div class="form-group">
+                        <div class="browser-default">
                             <label for="">Breed</label>
                             <input type="text" class="form-control" id="breed" placeholder="">
                         </div>
@@ -40,13 +38,23 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="">Vaccinated</label>
-                            <input type="text" class="form-control" id="vaccinated" placeholder="">
+                        <label for="">Vaccinated</label>
+                        <select class="browser-default" id="vaccinated">
+                            
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
                         </div>
+                        
 
                         <div class="form-group">
                             <label for="">Size</label>
-                            <input type="text" class="form-control" id="size" placeholder="">
+                            <select class="browser-default" id="size">
+                            
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
                         </div>
 
                         <div class="form-group">
@@ -80,6 +88,7 @@
 $(document).ready(function () {
 
     $('.modal').modal();
+    $('select').formSelect();
 
     // initializing the select options
     //$('select').formSelect();
@@ -109,7 +118,8 @@ $(document).ready(function () {
             $('.modal').modal('open');
 
             $('#dog_content').html(`
-                <div class="col s12 m4">
+            <h1>Your entry has been successfully submitted<h1/>
+                <div class="col s12 m12"> 
                     <div class="card">
                         <div class="card-image">
                         <img src="${data.photo}" style="width:336.14px;height:224.09px;">
@@ -118,12 +128,18 @@ $(document).ready(function () {
                         <div class="card-content">
                         <p></p>
                         </div>
-                        <div class="card-action" style="text-align:center;">
-                        <a href="#">${data.dog_name}</a>
+                        <div class="card-action" id="modaladmin" style="text-align:center;">
+                        <li href="#"> Name : ${data.dog_name}</li>
+                        <li href="#"> Gender : ${data.gender}</li>
+                        <li href="#">Breed : ${data.Breed}</li>
+                        <li href="#"> Vaccinated : ${data.Vaccinated}</li>
+                        <li href="#">Size : ${data.size}</li>
+                        <li href="#"> Gender: ${data.gender}</li>
                         </div>
                     </div>
                 </div>
             `);
+            $('select').formSelect();
         });
 
 

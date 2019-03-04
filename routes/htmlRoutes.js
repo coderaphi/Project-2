@@ -62,6 +62,11 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/contact", function(req, res) {
+    res.render("contact", {       
+      });  
+  });
+
 // ---------------------ADMIN PAGE----------------------------------------
   app.get('/adminpage', function(req, res) {
     res.render('adminpage',{
@@ -92,6 +97,18 @@ module.exports = function(app) {
     db.inventory.findAll({
       where: {
         Adapted: 'Yes'
+      }
+    }).then(function(body) {
+      res.render('adopt', {
+        dogs: body
+      });
+    });
+  });
+
+  app.get("/vaccinated", function(req, res) {
+    db.inventory.findAll({
+      where: {
+        Vaccinated: 'Yes'
       }
     }).then(function(body) {
       res.render('adopt', {

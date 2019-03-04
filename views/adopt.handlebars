@@ -5,11 +5,14 @@
     <h4 class="center">
 
     </h4>
-    
-     <a href="/adopted" class="btn btn-outline-info">
+
+    <a href="/adopted" class="btn btn-outline-info">
       <span class="fa fa-th-list"></span> Adopted</a>
 
-    <a href="/gender/Male" class="btn btn-danger btn-lg">
+    <a href="/vaccinated" class="btn btn-outline-info">
+      <span class="fa fa-th-list"></span> Vaccinated</a>  
+
+    <a href="/gender/Male" class="btn btn-outline-warning">
       <span class="fa fa-th-list"></span> Male</a>
 
     <a href="/gender/Female" class="btn btn-danger btn-lg">
@@ -18,26 +21,35 @@
     <a href="/all" class="btn btn-danger btn-lg">
       <span class="fa fa-th-list"></span> Show all pets</a>
 
-      <div style="margin-bottom: 10px;"></div>
+   
+
+    <div style="margin-bottom: 10px;"></div>
 
     <div class="row">
-        {{#each dogs}}
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image" style="display:flex; justify-content:center;">
-              <img src="{{photo}}" style="width:336.14px;height:224.09px;" "margin-top: 20px;">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p></p>
-            </div>
-            <div class="card-action" style="text-align:center;">
-              <a href="#">{{dog_name}}</a>
-            </div>
+      {{#each dogs}}
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image" style="display:flex; justify-content:center; ">
+            <img src="{{photo}}" style="width:336.14px;height:224.09px; margin-top: 20px;">
+            <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p></p>
+          </div>
+          <div class="card-action" style="text-align:center;">
+
+            <li href="#"> Name : {{dog_name}}</li>
+            <li href="#"> Gender : {{gender}}</li>
+            <li href="#"> Breed : {{Breed}}</li>
+            <li href="#"> Vaccinated : {{Vaccinated}}</li>
+            <li href="#"> Size : {{size}}</li>
+            <li href="#"> Gender: {{gender}}</li>
+            <a href="#">{{dog_name}}</a>
           </div>
         </div>
-        {{/each}}
       </div>
+      {{/each}}
+    </div>
 
   </div>
 </section>

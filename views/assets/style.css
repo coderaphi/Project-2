@@ -15,16 +15,32 @@ img {
   margin-left: 5px;
 }
 
+.teal {
+  background-color: #0c59ac !important;
+  background-image:url(img/dog-phone.jpg);
+  background-position: center center; 
+  background-size:     cover; 
+  width:620px; 
+  height: 250px;
+}
+
+.btn-group{
+
+  color:black;
+}
+
 .btn, .btn-large {
     text-decoration: none;
-    color: #333;
-    background-color: white;
+    color: rgb(43, 43, 43);
+    background-color: rgb(225, 225, 2);
     text-align: center;
     letter-spacing: .5px;
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
     cursor: pointer;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    
+    
     
 }
 
@@ -72,64 +88,49 @@ h4 {
 /* Dogapedia--------------------------------------------------- */
 
 
+  
 #banner-message {
-  background-image: url(img/hypnotize.png);
+  background: #fff;
   border-radius: 4px;
-  padding: 1px;
+  padding: 20px;
   font-size: 25px;
   text-align: center;
   transition: all 0.2s;
-  margin: 0 auto;
-  width: 500px;
-  float: left;
-  margin-top: 10%;
+  /* margin-left: 600px;
+  width: 500px; */
+  display: flex;
+  flex-direction: column;
 }
 
 #breed_data {
-  background-image: url(img/hypnotize.png);
+  background: #fff;
   border-radius: 4px;
-  padding: 1px;
+  padding: 20px;
   font-size: 12px;
   text-align: left;
   transition: all 0.2s;
-  margin: 0 auto;
-  width: 450px;
-  /* margin-top: 10%; */
-  float: left;
-  
-}
-#breed_data2{
-  background-image: url(img/hypnotize.png);
-  float: right;
-  border-radius: 4px;
-  padding: 1px;
-  font-size: 18px;
-  text-align: left;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 450px;
-  
+  /* margin-left: 640px; */
+  /* width: 500px; */
 }
 
 #breed_image {
-  background: #fff;
-  margin: 0 auto;
+  /* background: rgb(255, 255, 255); */
   width: 460px;
 }
+/* #banner-message{
+  margin-left: 635px;
+  margin-top: 80px;
+  width: 1000px;
+} */
 
-#breed_table_data {
+#breed_data2{
 
-  background: #fff;
-  border-radius: 4px;
-  padding: 1px;
-  font-size: 12px;
-  text-align: left;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 450px;
-  margin-top: 10%;
-
+  /* margin-left:650px; */
+  /* width: 1200px; */
+  background-color:white;
 }
+
+
 
 /* Dogapedia--------------------------------------------------- */
 
@@ -138,4 +139,22 @@ h4 {
   justify-content: space-between;
 }
 
-.cp-nav.fixed-nav{position:fixed;top:0;left:0;right:0;z-index:999;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;background:rgba(142, 142, 142, 0)}.cp-nav{background:transparent}.cp-nav .custom-nav{background:transparent;padding:0;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.cp-nav .custom-nav .navbar-brand{padding:50px 15px 20px;margin-right:0;background:#f6e25d;text-transform:uppercase;font-family:Oswald, sans-serif;font-size:40px;color:#000;-webkit-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s}.cp-nav .custom-nav .navbar-collapse{position:relative}.cp-nav .custom-nav .navbar-collapse .nav-top{position:absolute;top:-40px;right:20px;padding:0;margin:0;list-style:none;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease}.cp-nav .custom-nav .navbar-collapse .nav-top li{display:inline-block;color:#a1c4d3;font-size:12px;margin-left:20px;font-weight:300;padding-left:20px;position:relative}.cp-nav .custom-nav .navbar-collapse .nav-top li i{position:absolute;top:2px;left:0}.cp-nav .custom-nav .navbar-collapse .nav-top li.mobile{font-family:Oswald, sans-serif}.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item>.nav-link{position:relative}.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link.active:before{position:absolute;content:'';bottom:0;left:20px;height:3px;width:25px;background:#f6e25d}.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link{color:#fff;-webkit-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;font-family:Raleway, sans-serif;font-size:12px;padding:13px 20px;text-transform:uppercase;position:relative}.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu{background:#f2f2f2}.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .menu-item a{padding:6px 20px;color:#3b3738;text-transform:uppercase;font-size:12px}@media (min-width:992px){.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu{display:block;visibility:hidden;opacity:0;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;left:15px;margin:0;top:130%;padding:10px 0;border-radius:0}.cp-nav .custom-nav .navbar-collapse .navbar-nav .nav-item.dropdown:hover>.dropdown-menu{visibility:visible;opacity:1;top:100%}}.fixed-nav.fixed{background:#f2f2f2}.fixed-nav.fixed .custom-nav .navbar-brand{padding:30px 15px 10px}.fixed-nav.fixed .custom-nav .navbar-collapse .nav-top{right:0}.fixed-nav.fixed .custom-nav .navbar-collapse .nav-top li{color:#3b3738}.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link{color:#3b3738;padding:13px 15px}.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link:before{left:15px}.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav .nav-item.nav-donation .nav-link{background:#f6e25d;font-weight:600}@media (max-width:991px){.cp-nav.fixed-nav,.fixed-nav.fixed{background:#f2f2f2}.cp-nav.fixed-nav .custom-nav,.fixed-nav.fixed .custom-nav{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.cp-nav.fixed-nav .custom-nav .navbar-brand,.fixed-nav.fixed .custom-nav .navbar-brand{padding:10px 15px 10px;line-height:1}.cp-nav.fixed-nav .custom-nav .navbar-toggler,.fixed-nav.fixed .custom-nav .navbar-toggler{broder:1px solid #f6e25d;background:#f6e25d;border-radius:0;outline:none;padding-top:6px}.cp-nav.fixed-nav .custom-nav .navbar-collapse .nav-top,.fixed-nav.fixed .custom-nav .navbar-collapse .nav-top{display:none;visiblity:hidden}.cp-nav.fixed-nav .custom-nav .navbar-collapse .navbar-nav,.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav{padding:20px 0}.cp-nav.fixed-nav .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link,.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link{color:#3b3738;padding:8px 0}.cp-nav.fixed-nav .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link:before,.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav .nav-item .nav-link:before{left:0}.cp-nav.fixed-nav .custom-nav .navbar-collapse .navbar-nav .nav-item.nav-donation .nav-link,.fixed-nav.fixed .custom-nav .navbar-collapse .navbar-nav .nav-item.nav-donation .nav-link{background:#f6e25d;display:inline-block;padding:8px 20px;font-weight:600}}.slider{position:relative}.slider-content{position:absolute;background:rgba(34, 70, 84, 0.7);top:0;bottom:0;left:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.slider-content .title-text{color:#fff;word-spacing:5px;letter-spacing:5px}.slider-content ul{margin:20px 0 40px}.slider-content ul li{display:inline-block;color:#ebf5f9;font-size:14px;text-transform:uppercase}.slider-content ul li:after{content:"\02026";position:relative;top:-4px;padding:0 5px 0 10px}.slider-content ul li:last-child:after{content:" "}.slider-content .btn-base{color:#fff}.home .owl-carousel{position:relative}.home .owl-nav{margin-top:0}.home .owl-nav [class*=owl-],.home .owl-nav [class^=owl-]{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);margin:0;border-radius:0;font-family:"anima-icon";font-size:20px;color:#a1c4d3;background:rgba(0, 0, 0, 0.2);padding:40px 10px;-webkit-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s}.home .owl-nav [class*=owl-]:hover,.home .owl-nav [class^=owl-]:hover{background:rgba(0, 0, 0, 0.3)}.home .owl-nav .owl-prev{left:0}.home .owl-nav .owl-next{right:0}
+.location{
+  font-size: 30px;
+}
+
+
+#modaladmin{
+
+  list-style-type: none;
+}
+
+.card .card-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-action{
+  list-style-type: none;
+}

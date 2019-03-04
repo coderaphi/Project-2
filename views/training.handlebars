@@ -28,8 +28,10 @@
 
 <script>
   $( document ).ready(function() {
-    $('.modal').modal();
-    $('#modal1').on('click', function() {
+    $('.modal').modal({
+      onCloseStart: function() {
+        $('#video_content').html('');
+      }
     });
   });
 
