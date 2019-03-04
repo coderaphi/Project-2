@@ -20,7 +20,7 @@ img {
   background-image:url(img/dog-phone.jpg);
   background-position: center center; 
   background-size:     cover; 
-  width:620px; 
+  width: 559px;
   height: 250px;
 }
 
@@ -157,6 +157,8 @@ h4 {
 }
 .surveryQ{
   text-align:center;
+  font-family: 'Bowlby One SC', cursive;
+
 }
 .modaldesc{
   font-size: 35px;
