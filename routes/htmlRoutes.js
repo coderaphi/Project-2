@@ -9,9 +9,14 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     
-      res.render("index", {
-        msg: "We are commited to finding homes for our four legged furry friends. Take our survey and find out which breed suits you the best Want to learn more about different breeds? Just click on Dogapedia You can scroll through our Adopt a Pet database to find out about all the good boys and good girls who still haven't found a home Check out our training videos and train your dog the proper way. You might even teach an old dog new tricks Kinder Pound also provides resources such as vetenary care locations, pet grooming locations and dog park information at the click of a button.",
-        inventory: {}
+      // res.render("index", {
+      //   msg: "We are commited to finding homes for our four legged furry friends. Take our survey and find out which breed suits you the best Want to learn more about different breeds? Just click on Dogapedia You can scroll through our Adopt a Pet database to find out about all the good boys and good girls who still haven't found a home Check out our training videos and train your dog the proper way. You might even teach an old dog new tricks Kinder Pound also provides resources such as vetenary care locations, pet grooming locations and dog park information at the click of a button.",
+      //   inventory: {}
+      // });
+      db.inventory.findAll({}).then(function(body) {
+        res.render('adopt', {
+          dogs: body
+        });
       });
     
   });
