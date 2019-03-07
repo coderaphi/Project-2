@@ -11,7 +11,7 @@ var db = {};
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(
-    process.env[config.use_env_variable],
+    process.env.CLEARDB_DATABASE_URL,
     { dialect: config.dialect }
   );
 } else {
