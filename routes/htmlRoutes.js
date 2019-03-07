@@ -2,7 +2,7 @@ var db = require("../models");
 var dogs = require('../data/dogs');
 var surveyController = require('../controller/SurveyController');
 var tainingVideoController = require('../controller/TrainingVideoController');
-var path = require("path");
+// var path = require("path");
 
 
 module.exports = function(app) {
