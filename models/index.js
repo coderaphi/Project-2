@@ -9,6 +9,8 @@ var config = require(__dirname + "/../config/config.json")[env];
 var dog_fixture = require('../data/dog_fixture');
 var db = {};
 
+console.log(process.env.CLEARDB_DATABASE_URL);
+
 if (config.use_env_variable) {
   var sequelize = new Sequelize(
     process.env.CLEARDB_DATABASE_URL,
