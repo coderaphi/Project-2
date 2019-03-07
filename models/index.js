@@ -53,7 +53,10 @@ var inventory = sequelize.define("inventory", {
 });
 
 inventory.sync({ force: true }).then(() => {
-  return dog_fixture.map(a => inventory.create(a));
+  dog_fixture.forEach(function(a) {
+    inventory.create(a)
+  });
+  // return dog_fixture.map(a => inventory.create(a));
 });
 
 db.sequelize = sequelize;
